@@ -1,0 +1,165 @@
+<!--
+theme name:     M17 SimplyElec
+Creator:        Maik
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+   
+    <feature supported="carousel">
+    <view name="system">	
+    <carousel name="systemcarousel">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <type>vertical</type>
+         <alignment>center</alignment>
+         <color>FFFFFF00</color>
+         <size>1 1</size>
+         <logoSize>0.8 0.8</logoSize>
+         <logoScale>1</logoScale>
+         <maxLogoCount>7</maxLogoCount>    
+    </carousel>
+
+    <image name="staticBackground">
+	 <size>1 1</size>
+	 <pos>0 0</pos>
+	 <origin>0 0</origin>
+	 <tile>false</tile>
+	 <linearSmooth>true</linearSmooth>
+	 <path>./assets/bg-home.png</path>
+	 <zIndex>0</zIndex>
+    </image>
+
+    <text name="logoText">
+         <fontPath>./Lato-Bold.ttf</fontPath>
+         <fontSize>0.07</fontSize>
+	 <forceUppercase>false</forceUppercase>
+         <lineSpacing>1</lineSpacing>
+         <alignment>left</alignment>
+         <color>ffffff</color>
+    </text>
+	  
+    <text name="systemInfo">     
+         <pos>0.0 0.0</pos>
+         <backgroundColor>000000</backgroundColor>
+         <fontPath>./Lato-Bold.ttf</fontPath>
+	     <fontSize>0.00</fontSize>
+         <zIndex>5</zIndex>	     
+    </text> 
+    </view>
+    </feature>
+  
+    <view name="system,detailed,video,basic">
+    <helpsystem name="help">
+         <fontPath>./Lato-Bold.ttf</fontPath>  
+         <fontSize>0.00</fontSize>
+		 <pos>0.0 -1</pos>
+		 <textColor>ffffff</textColor>
+		 <iconColor>ffffff</iconColor>
+    </helpsystem>
+    </view>  
+   
+    <view name="basic">
+    <text name="description" extra="true">
+         <pos>0.605 0.605</pos>
+         <size>0.347 0.183</size>
+         <alignment>right</alignment>
+         <color>ffffff</color>
+         <fontSize>0.032</fontSize>
+         <text></text>
+         <fontPath>./Lato-Bold.ttf</fontPath>
+    </text>
+    </view>
+  
+    <view name="basic, detailed, video">
+    <image name="background" extra="true">
+         <size>1 1</size>
+         <pos>0 0</pos>
+         <origin>0 0</origin>
+         <path>./assets/bg.png</path>
+         <zIndex>0</zIndex>
+    </image>
+
+    <textlist name="gamelist">
+         <selectorColor>00000000</selectorColor>
+         <selectedColor>0F6585</selectedColor>
+         <primaryColor>ffffff</primaryColor>
+         <secondaryColor>ffffff</secondaryColor>
+         <fontPath>./Lato-Bold.ttf</fontPath>
+         <fontSize>0.05</fontSize>
+         <pos>0.01 0.170</pos>
+         <size>1 0.70</size>
+         <alignment>left</alignment>
+         <horizontalMargin>0.01</horizontalMargin>
+         <origin>0 0</origin>
+         <lineSpacing>1</lineSpacing>
+         <selectorOffsetY>-0.01</selectorOffsetY>
+         <selectorHeight>0.0675</selectorHeight>
+    </textlist>
+	
+    <text name="system_name" extra="true">
+         <text>${system.fullName}</text>
+         <forceUppercase>0</forceUppercase>
+         <size>0.5 0.025</size>
+         <pos>0.02 0.025</pos>
+         <color>ffffff</color>
+         <fontPath>./Lato-Bold.ttf</fontPath>
+         <fontSize>0.05</fontSize>
+         <zIndex>2</zIndex>
+    </text>
+	
+    <text name="md_lbl_genre, md_genre, md_lbl_rating, md_lbl_developer, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_releasedate">
+         <visible>false</visible>
+    </text>
+	
+    <rating name="md_rating">
+         <visible>false</visible>
+    </rating>
+	
+    <image name="md_thumbnail">
+         <visible>false</visible>
+    </image>
+	
+    <video name="md_video">
+	 <visible>false</visible>
+    </video>
+	
+    <text name="md_description">
+         <pos>0.605 0.685</pos>
+         <size>0.347 0.183</size>
+         <color>ffffff</color>
+         <fontSize>0.025</fontSize>
+         <fontPath>./Lato-Bold.ttf</fontPath>
+    </text>
+    </view>
+   
+    <view name="menu">
+    <menuBackground name="menubg">
+         <color>ffffff</color>
+    </menuBackground>
+	
+	<menuText name="menutext, menutitle">
+         <fontPath>./Lato-Bold.ttf</fontPath>
+         <fontSize>.039</fontSize>
+         <color>000000</color>
+    </menuText>
+	
+	<menuText name="menufooter, menutextsmall">
+         <fontPath>./Lato-Bold.otf</fontPath>
+         <fontSize>.029</fontSize>		 
+         <color>000000</color>
+    </menuText>
+	</view>
+  
+  	<view name="screen">
+         <text name="clock">
+	     <color>ffffff</color>
+	     <fontPath>./Lato-Bold.ttf</fontPath>
+         <fontSize>0.04</fontSize>
+         <pos>0.48 0.0</pos>
+         <size>0.5 0.058</size>
+    </text>
+    </view>
+  
+</theme>
